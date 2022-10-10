@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y wget make python3-pip \
                                  texlive-base texlive-bibtex-extra texlive-binaries texlive-extra-utils \
                                  texlive-font-utils texlive-fonts-extra texlive-fonts-recommended \
                                  texlive-formats-extra texlive-humanities  texlive-lang-japanese \
-                                 texlive-latex-base texlive-latex-extra  texlive-latex-recommended latexmk \
+                                 texlive-latex-base texlive-latex-extra  texlive-latex-recommended latexmk && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN wget http://mirrors.ctan.org/macros/latex/contrib/multirow/multirow.dtx && wget http://mirrors.ctan.org/macros/latex/contrib/multirow/multirow.ins & \
     wget http://mirrors.ctan.org/macros/latex/contrib/booktabs/booktabs.dtx && wget http://mirrors.ctan.org/macros/latex/contrib/booktabs/booktabs.ins & \
